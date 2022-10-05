@@ -1,3 +1,6 @@
+import Button from '@mui/material/Button'
+
+
 function Modal(props) {
 
   function cancelHandler() {
@@ -11,8 +14,8 @@ function Modal(props) {
   return (
     <div className="modal">
       <p>Are you sure?</p>
-      <button className="btn btn--alt" onClick={cancelHandler}>Cancel</button>
-      <button className="btn" onClick={confirmHandler}>Confirm</button>
+      <Button variant="contained" className="btn btn--alt" onClick={cancelHandler}>Cancel</Button>
+      <Button variant="contained" className="btn" onClick={confirmHandler}>Confirm</Button>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Backdrop from "./Backdrop";
 import Modal from "./Modal";
+import Button from '@mui/material/Button'
 
 function Todo(props) {
   const [showModal, setShowModal] = useState(false);
@@ -17,9 +18,9 @@ function Todo(props) {
     <div className="card">
       <h2>{props.text}</h2>
       <div className="actions">
-        <button className="btn" onClick={deleteHandler}>
+        <Button variant="contained" className="btn" onClick={deleteHandler}>
           Delete
-        </button>
+        </Button>
       </div>
       {showModal && (
         <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler} />
