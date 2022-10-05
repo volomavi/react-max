@@ -1,7 +1,12 @@
 
+import Todo from "./components/Todo";
+
 function App() {
   return (
-    <div>Hello!</div>
+    <div>
+      <h1>Todo</h1>
+      <Todo text="fold laundry" />
+    </div>
   );
 }
 
